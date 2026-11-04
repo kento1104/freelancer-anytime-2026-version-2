@@ -70,7 +70,7 @@ import proposalMaker from './proposalMaker.js';
 
 
 const app = express();
-const PORT = 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
 // Middleware
 app.use(cors({
